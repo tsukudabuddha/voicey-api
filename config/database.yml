@@ -3,16 +3,16 @@ development:
   encoding: unicode
   database: voicey_development
   pool: 5
-  username: postgres
-  password: postgres
+  username: andrew
+  password:
 
 test:
   adapter: postgresql
   encoding: unicode
   database: voicey_test
   pool: 5
-  username: postgres
-  password: postgres
+  username: andrew
+  password:
 
 
 production:
@@ -20,5 +20,5 @@ production:
   encoding: unicode
   database: voicey_production
   pool: 5
-  username: postgres
-  password: postgres
+  username: andrew
+  password: 

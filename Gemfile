@@ -6,6 +6,13 @@ git_source(:github) do |repo_name|
 end
 
 
+# Testing Stuff
+group :test do
+  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
+  gem 'database_cleaner', '~> 1.6', '>= 1.6.2'
+end
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
 # Use postgresql as the database for Active Record
