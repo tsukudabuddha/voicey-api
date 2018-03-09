@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180305064714) do
+ActiveRecord::Schema.define(version: 20180309051808) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,7 +30,11 @@ ActiveRecord::Schema.define(version: 20180305064714) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "token"
+    t.string "password_has"
+    t.string "password_salt"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["token"], name: "index_users_on_token"
   end
 
   add_foreign_key "memos", "users"

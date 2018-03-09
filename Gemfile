@@ -19,6 +19,8 @@ gem 'rails', '~> 5.1.5'
 gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+# Use ActiveModel has secure password
+gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
