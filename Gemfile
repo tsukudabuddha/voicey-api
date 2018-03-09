@@ -12,6 +12,13 @@ group :test do
   gem 'database_cleaner', '~> 1.6', '>= 1.6.2'
 end
 
+# Attachments
+gem 'paperclip', '~> 5.1'
+# Amazon
+gem 'aws-sdk', '~> 2.3.0'
+
+gem 'active_model_serializers'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
